@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/sales_mainLayout">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        app:cardCornerRadius="20dp"
+        app:cardBackgroundColor="@color/sales_color">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="12dp">
+
+            <ImageView
+                android:id="@+id/sales_edit_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_edit"
+                android:visibility="invisible"/>
+
+            <TextView
+                android:id="@+id/sales_id_row"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:text="1"
+                android:textColor="@color/blue_900"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/sales_shop_name_row"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="Shop Name"
+                android:textColor="@color/blue_900"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/sales_id_row"
+                app:layout_constraintTop_toTopOf="@+id/sales_id_row" />
+
+            <TextView
+                android:id="@+id/sales_unit_type_row"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="Unit Type"
+                android:textColor="@color/blue_700"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="@+id/sales_shop_name_row"
+                app:layout_constraintTop_toBottomOf="@+id/sales_shop_name_row" />
+
+            <TextView
+                android:id="@+id/sales_quantity_row"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="Quantity"
+                android:textColor="@color/blue_700"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="@+id/sales_unit_type_row"
+                app:layout_constraintTop_toBottomOf="@+id/sales_unit_type_row" />
+
+            <TextView
+                android:id="@+id/sales_date_row"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="Date"
+                android:textColor="@color/blue_700"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="@+id/sales_id_row"
+                app:layout_constraintStart_toStartOf="@+id/sales_quantity_row"
+                app:layout_constraintTop_toBottomOf="@+id/sales_quantity_row"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/sales_total_price_row"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="56dp"
+                android:gravity="center"
+                android:text="Total Price"
+                android:textColor="@color/blue_700"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="@+id/sales_edit_icon"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/sales_quantity_row"
+                app:layout_constraintTop_toBottomOf="@+id/sales_edit_icon" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

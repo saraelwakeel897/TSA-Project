@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="balance_color">#81D4FA</color>
+    <color name="sales_color">#F48FB1</color>
+    <color name="store_color">#FFB74D</color>
+    <color name="maintenance_color">#B39DDB</color>
+    <color name="additional_color">#77E0AF</color>
+    <color name="reports_color">#F8E85D</color>
+
+
+    <color name="teal_200">#80CBC4</color>
+    <color name="teal_300">#4DB6AC</color>
+    <color name="teal_500">#009688</color>
+    <color name="teal_700">#00796B</color>
+    <color name="teal_900">#004D40</color>
+
+    <color name="blue_200">#B0BEC5</color>
+    <color name="blue_300">#90A4AE</color>
+    <color name="blue_500">#607D8B</color>
+    <color name="blue_700">#37474F</color>
+    <color name="blue_900">#263238</color>
+
+    <color name="orange_200">#FFCC80</color>
+    <color name="orange_300">#FFB74D</color>
+    <color name="orange_500">#FF9800</color>
+    <color name="orange_700">#F57C00</color>
+    <color name="orange_900">#E65100</color>
+
+    <color name="gray_200">#EEEEEE</color>
+    <color name="gray_300">#E0E0E0</color>
+    <color name="gray_500">#9E9E9E</color>
+    <color name="gray_700">#616161</color>
+    <color name="gray_900">#212121</color>
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>

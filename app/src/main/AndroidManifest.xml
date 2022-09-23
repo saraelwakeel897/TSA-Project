@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.iti_final_project">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ITI_Final_Project">
+
+
+        <activity
+            android:name=".Additional.add_additional"
+            android:exported="false"
+            android:label="Add New Additional Requests"
+            android:parentActivityName=".UI.additional_requests" />
+        <activity
+            android:name=".Maintenance.add_maintenance"
+            android:exported="false"
+            android:label="Add New Maintenance Request"
+            android:parentActivityName=".UI.maintenance" />
+        <activity
+            android:name=".Stores.add_stores"
+            android:exported="false"
+            android:label="Add New Store"
+            android:parentActivityName=".UI.stores" />
+        <activity
+            android:name=".Stores.update_stores"
+            android:exported="false"
+            android:label="Update Last Visit Date"
+            android:parentActivityName=".UI.stores" />
+        <activity
+            android:name=".Sales.update_sales"
+            android:exported="false"
+            android:label="Update Sales Operation"
+            android:parentActivityName=".UI.sales" />
+        <activity
+            android:name=".Sales.add_sales"
+            android:exported="false"
+            android:label="Add New Sale Operation"
+            android:parentActivityName=".UI.sales" />
+        <activity
+            android:name=".Balance.update_balance"
+            android:exported="false"
+            android:label="Update Weekly Balance"
+            android:parentActivityName=".UI.weekly_balance" />
+        <activity
+            android:name=".Balance.add_balance"
+            android:exported="false"
+            android:label="Add New Weekly Balance"
+            android:parentActivityName=".UI.weekly_balance" />
+        <activity
+            android:name=".UI.reports"
+            android:exported="false"
+            android:label="Reports"
+            android:parentActivityName=".UI.home" />
+        <activity
+            android:name=".UI.additional_requests"
+            android:exported="false"
+            android:label="Additional Requests"
+            android:parentActivityName=".UI.home" />
+        <activity
+            android:name=".UI.maintenance"
+            android:exported="false"
+            android:label="Maintenance Requests"
+            android:parentActivityName=".UI.home" />
+        <activity
+            android:name=".UI.stores"
+            android:exported="false"
+            android:label="Registered Stores"
+            android:parentActivityName=".UI.home" />
+        <activity
+            android:name=".UI.sales"
+            android:exported="false"
+            android:label="Sales Operations"
+            android:parentActivityName=".UI.home" />
+        <activity
+            android:name=".UI.weekly_balance"
+            android:exported="false"
+            android:label="Weekly Balance"
+            android:parentActivityName=".UI.home" />
+        <activity
+            android:name=".UI.home"
+            android:exported="true"
+            android:label="Home">
+        </activity>
+        <activity
+            android:name=".UI.splash_screen"
+            android:exported="true"
+            android:theme="@style/splash_screen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+    </application>
+
+</manifest>
