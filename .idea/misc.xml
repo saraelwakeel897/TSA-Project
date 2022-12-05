@@ -29,7 +29,7 @@
         <entry key="..\:/ProJects/Android/ITI Finals/ITI_Final_Project2/ITI_Final_Project/app/src/main/res/drawable/splash_screen.xml" value="0.1875" />
         <entry key="..\:/ProJects/Android/ITI Finals/ITI_Final_Project2/ITI_Final_Project/app/src/main/res/font/roboto.xml" value="0.2518518518518518" />
         <entry key="..\:/ProJects/Android/ITI Finals/ITI_Final_Project2/ITI_Final_Project/app/src/main/res/layout/activity_add_additional.xml" value="0.25" />
-        <entry key="..\:/ProJects/Android/ITI Finals/ITI_Final_Project2/ITI_Final_Project/app/src/main/res/layout/activity_add_balance.xml" value="0.25" />
+        <entry key="..\:/ProJects/Android/ITI Finals/ITI_Final_Project2/ITI_Final_Project/app/src/main/res/layout/activity_add_balance.xml" value="0.176" />
         <entry key="..\:/ProJects/Android/ITI Finals/ITI_Final_Project2/ITI_Final_Project/app/src/main/res/layout/activity_add_maintenance.xml" value="0.25" />
         <entry key="..\:/ProJects/Android/ITI Finals/ITI_Final_Project2/ITI_Final_Project/app/src/main/res/layout/activity_add_sales.xml" value="0.264" />
         <entry key="..\:/ProJects/Android/ITI Finals/ITI_Final_Project2/ITI_Final_Project/app/src/main/res/layout/activity_add_stores.xml" value="0.25" />
@@ -38,13 +38,13 @@
         <entry key="..\:/ProJects/Android/ITI Finals/ITI_Final_Project2/ITI_Final_Project/app/src/main/res/layout/activity_maintenance.xml" value="0.25" />
         <entry key="..\:/ProJects/Android/ITI Finals/ITI_Final_Project2/ITI_Final_Project/app/src/main/res/layout/activity_map.xml" value="0.25" />
         <entry key="..\:/ProJects/Android/ITI Finals/ITI_Final_Project2/ITI_Final_Project/app/src/main/res/layout/activity_reports.xml" value="0.25" />
-        <entry key="..\:/ProJects/Android/ITI Finals/ITI_Final_Project2/ITI_Final_Project/app/src/main/res/layout/activity_sales.xml" value="0.25" />
+        <entry key="..\:/ProJects/Android/ITI Finals/ITI_Final_Project2/ITI_Final_Project/app/src/main/res/layout/activity_sales.xml" value="0.2" />
         <entry key="..\:/ProJects/Android/ITI Finals/ITI_Final_Project2/ITI_Final_Project/app/src/main/res/layout/activity_splash_screen.xml" value="0.25" />
         <entry key="..\:/ProJects/Android/ITI Finals/ITI_Final_Project2/ITI_Final_Project/app/src/main/res/layout/activity_stores.xml" value="0.25" />
         <entry key="..\:/ProJects/Android/ITI Finals/ITI_Final_Project2/ITI_Final_Project/app/src/main/res/layout/activity_update_balance.xml" value="0.25" />
         <entry key="..\:/ProJects/Android/ITI Finals/ITI_Final_Project2/ITI_Final_Project/app/src/main/res/layout/activity_update_sales.xml" value="0.25" />
         <entry key="..\:/ProJects/Android/ITI Finals/ITI_Final_Project2/ITI_Final_Project/app/src/main/res/layout/activity_update_stores.xml" value="0.25" />
-        <entry key="..\:/ProJects/Android/ITI Finals/ITI_Final_Project2/ITI_Final_Project/app/src/main/res/layout/activity_weekly_balance.xml" value="0.2" />
+        <entry key="..\:/ProJects/Android/ITI Finals/ITI_Final_Project2/ITI_Final_Project/app/src/main/res/layout/activity_weekly_balance.xml" value="0.16" />
         <entry key="..\:/ProJects/Android/ITI Finals/ITI_Final_Project2/ITI_Final_Project/app/src/main/res/layout/additional_row.xml" value="0.25" />
         <entry key="..\:/ProJects/Android/ITI Finals/ITI_Final_Project2/ITI_Final_Project/app/src/main/res/layout/balance_row.xml" value="0.25" />
         <entry key="..\:/ProJects/Android/ITI Finals/ITI_Final_Project2/ITI_Final_Project/app/src/main/res/layout/maintenance_row.xml" value="0.25" />

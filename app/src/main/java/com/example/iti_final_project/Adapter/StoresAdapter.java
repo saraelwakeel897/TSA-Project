@@ -1,10 +1,12 @@
 package com.example.iti_final_project.Adapter;
 
+import android.Manifest;
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.ActivityNotFoundException;
 import android.content.Context;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.location.Address;
 import android.location.Geocoder;
 import android.net.Uri;
@@ -20,6 +22,9 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
+import androidx.core.content.PackageManagerCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.iti_final_project.R;
@@ -35,6 +40,7 @@ public class StoresAdapter extends RecyclerView.Adapter<StoresAdapter.MyViewHold
     ArrayList stores_id, store_shop_name, shop_location, shop_phone, last_visit_date;
     Activity stores_activity;
 
+    private static final int PERMISSION_CODE = 1;
     Animation animation;
 
     public StoresAdapter(Activity stores_activity, Context stores_context, ArrayList stores_id, ArrayList store_shop_name, ArrayList shop_location, ArrayList shop_phone, ArrayList last_visit_date) {
@@ -99,9 +105,13 @@ public class StoresAdapter extends RecyclerView.Adapter<StoresAdapter.MyViewHold
             @Override
             public void onClick(View v) {
                 String number = holder.shop_phone_txt.getText().toString();
-                String s = "tel:"+number;
-                Intent callIntent = new Intent(Intent.ACTION_DIAL);
-                callIntent.setData(Uri.parse(s));
+
+                if(ContextCompat.checkSelfPermission(stores_context, Manifest.permission.CALL_PHONE)
+                        != PackageManager.PERMISSION_GRANTED){
+                    ActivityCompat.requestPermissions(stores_activity, new String[] {Manifest.permission.CALL_PHONE}, PERMISSION_CODE);
+                }
+                Intent callIntent = new Intent(Intent.ACTION_CALL);
+                callIntent.setData(Uri.parse("tel:"+number));
                 stores_activity.startActivity(callIntent);
             }
         });

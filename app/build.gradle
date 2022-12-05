@@ -52,6 +52,7 @@ dependencies {
 
     // Room components
     implementation "androidx.room:room-runtime:$rootProject.roomVersion"
+    implementation 'androidx.core:core:1.7.0'
     annotationProcessor "androidx.room:room-compiler:$rootProject.roomVersion"
     androidTestImplementation "androidx.room:room-testing:$rootProject.roomVersion"
 

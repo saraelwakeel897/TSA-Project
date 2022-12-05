@@ -49,7 +49,7 @@
         android:layout_marginTop="16dp"
         android:ems="10"
         android:hint="Shop Phone"
-        android:inputType="number"
+        android:inputType="phone"
         android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="@+id/text_shop_location"
         app:layout_constraintHorizontal_bias="0.0"
