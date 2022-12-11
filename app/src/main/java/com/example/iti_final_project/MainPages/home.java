@@ -8,7 +8,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.iti_final_project.Additional.additional_requests;
+import com.example.iti_final_project.Balance.weekly_balance;
+import com.example.iti_final_project.Maintenance.maintenance;
 import com.example.iti_final_project.R;
+import com.example.iti_final_project.Reports.reports;
+import com.example.iti_final_project.Sales.sales;
+import com.example.iti_final_project.Stores.stores;
 
 public class home extends AppCompatActivity {
 

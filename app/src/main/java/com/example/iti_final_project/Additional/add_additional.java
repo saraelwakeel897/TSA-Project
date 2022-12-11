@@ -17,7 +17,6 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.iti_final_project.DataBase.DataBase;
-import com.example.iti_final_project.MainPages.additional_requests;
 import com.example.iti_final_project.R;
 
 import java.util.ArrayList;

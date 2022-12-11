@@ -1,4 +1,4 @@
-package com.example.iti_final_project.MainPages;
+package com.example.iti_final_project.Login_Register;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -13,6 +13,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.iti_final_project.DataBase.DataBase;
+import com.example.iti_final_project.MainPages.home;
 import com.example.iti_final_project.R;
 
 public class register extends AppCompatActivity {

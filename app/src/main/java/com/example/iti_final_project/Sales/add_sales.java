@@ -23,7 +23,6 @@ import android.widget.Toast;
 
 import com.example.iti_final_project.DataBase.DataBase;
 import com.example.iti_final_project.R;
-import com.example.iti_final_project.MainPages.sales;
 
 import java.util.ArrayList;
 import java.util.Calendar;

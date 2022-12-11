@@ -1,4 +1,4 @@
-package com.example.iti_final_project.MainPages;
+package com.example.iti_final_project.Balance;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -24,7 +24,6 @@ import android.widget.Toast;
 import com.example.iti_final_project.Adapter.BalanceAdapter;
 import com.example.iti_final_project.DataBase.DataBase;
 import com.example.iti_final_project.R;
-import com.example.iti_final_project.Balance.add_balance;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.util.ArrayList;

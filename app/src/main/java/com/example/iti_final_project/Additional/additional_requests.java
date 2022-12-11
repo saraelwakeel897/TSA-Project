@@ -1,4 +1,4 @@
-package com.example.iti_final_project.MainPages;
+package com.example.iti_final_project.Additional;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -13,7 +13,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.iti_final_project.Adapter.AdditionalAdapter;
-import com.example.iti_final_project.Additional.add_additional;
 import com.example.iti_final_project.DataBase.DataBase;
 import com.example.iti_final_project.R;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;

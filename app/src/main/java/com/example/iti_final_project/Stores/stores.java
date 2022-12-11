@@ -1,4 +1,4 @@
-package com.example.iti_final_project.MainPages;
+package com.example.iti_final_project.Stores;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -15,7 +15,6 @@ import android.widget.TextView;
 import com.example.iti_final_project.Adapter.StoresAdapter;
 import com.example.iti_final_project.DataBase.DataBase;
 import com.example.iti_final_project.R;
-import com.example.iti_final_project.Stores.add_stores;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.util.ArrayList;

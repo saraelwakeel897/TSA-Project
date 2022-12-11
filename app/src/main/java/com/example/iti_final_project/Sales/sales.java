@@ -1,4 +1,4 @@
-package com.example.iti_final_project.MainPages;
+package com.example.iti_final_project.Sales;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -32,7 +32,6 @@ import android.widget.Toast;
 import com.example.iti_final_project.Adapter.SalesAdapter;
 import com.example.iti_final_project.DataBase.DataBase;
 import com.example.iti_final_project.R;
-import com.example.iti_final_project.Sales.add_sales;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.io.File;

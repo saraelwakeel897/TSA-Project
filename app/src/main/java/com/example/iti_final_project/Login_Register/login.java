@@ -1,4 +1,4 @@
-package com.example.iti_final_project.MainPages;
+package com.example.iti_final_project.Login_Register;
 
 import androidx.appcompat.app.AppCompatActivity;
 

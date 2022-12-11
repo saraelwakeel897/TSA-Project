@@ -20,69 +20,69 @@
             android:name=".Additional.add_additional"
             android:exported="false"
             android:label="Add New Additional Requests"
-            android:parentActivityName=".MainPages.additional_requests" />
+            android:parentActivityName=".Additional.additional_requests" />
         <activity
             android:name=".Maintenance.add_maintenance"
             android:exported="false"
             android:label="Add New Maintenance Request"
-            android:parentActivityName=".MainPages.maintenance" />
+            android:parentActivityName=".Maintenance.maintenance" />
         <activity
             android:name=".Stores.add_stores"
             android:exported="false"
             android:label="Add New Store"
-            android:parentActivityName=".MainPages.stores" />
+            android:parentActivityName=".Stores.stores" />
         <activity
             android:name=".Stores.update_stores"
             android:exported="false"
             android:label="Update Last Visit Date"
-            android:parentActivityName=".MainPages.stores" />
+            android:parentActivityName=".Stores.stores" />
         <activity
             android:name=".Sales.update_sales"
             android:exported="false"
             android:label="Update Sales Operation"
-            android:parentActivityName=".MainPages.sales" />
+            android:parentActivityName=".Sales.sales" />
         <activity
             android:name=".Sales.add_sales"
             android:exported="false"
             android:label="Add New Sale Operation"
-            android:parentActivityName=".MainPages.sales" />
+            android:parentActivityName=".Sales.sales" />
         <activity
             android:name=".Balance.update_balance"
             android:exported="false"
             android:label="Update Weekly Balance"
-            android:parentActivityName=".MainPages.weekly_balance" />
+            android:parentActivityName=".Balance.weekly_balance" />
         <activity
             android:name=".Balance.add_balance"
             android:exported="false"
             android:label="Add New Weekly Balance"
-            android:parentActivityName=".MainPages.weekly_balance" />
+            android:parentActivityName=".Balance.weekly_balance" />
         <activity
-            android:name=".MainPages.reports"
+            android:name=".Reports.reports"
             android:exported="false"
             android:label="Reports"
             android:parentActivityName=".MainPages.home" />
         <activity
-            android:name=".MainPages.additional_requests"
+            android:name=".Additional.additional_requests"
             android:exported="false"
             android:label="Additional Requests"
             android:parentActivityName=".MainPages.home" />
         <activity
-            android:name=".MainPages.maintenance"
+            android:name=".Maintenance.maintenance"
             android:exported="false"
             android:label="Maintenance Requests"
             android:parentActivityName=".MainPages.home" />
         <activity
-            android:name=".MainPages.stores"
+            android:name=".Stores.stores"
             android:exported="false"
             android:label="Registered Stores"
             android:parentActivityName=".MainPages.home" />
         <activity
-            android:name=".MainPages.sales"
+            android:name=".Sales.sales"
             android:exported="false"
             android:label="Sales Operations"
             android:parentActivityName=".MainPages.home" />
         <activity
-            android:name=".MainPages.weekly_balance"
+            android:name=".Balance.weekly_balance"
             android:exported="false"
             android:label="Weekly Balance"
             android:parentActivityName=".MainPages.home" />
@@ -91,7 +91,7 @@
             android:exported="true"
             android:label="Home" />
         <activity
-            android:name=".MainPages.register"
+            android:name=".Login_Register.register"
             android:exported="false"
             android:theme="@style/splash_screen">
             <meta-data
@@ -99,7 +99,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".MainPages.login"
+            android:name=".Login_Register.login"
             android:exported="false"
             android:theme="@style/splash_screen">
             <meta-data
