@@ -1,4 +1,4 @@
-package com.example.iti_final_project.UI;
+package com.example.iti_final_project.MainPages;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;

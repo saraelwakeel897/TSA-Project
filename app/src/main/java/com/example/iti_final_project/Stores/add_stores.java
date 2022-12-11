@@ -16,7 +16,7 @@ import android.widget.Toast;
 
 import com.example.iti_final_project.DataBase.DataBase;
 import com.example.iti_final_project.R;
-import com.example.iti_final_project.UI.stores;
+import com.example.iti_final_project.MainPages.stores;
 
 import java.util.Calendar;
 

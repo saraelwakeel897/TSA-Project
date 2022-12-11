@@ -12,6 +12,13 @@ public class DataBase extends SQLiteOpenHelper {
     private static final String DATABASE_NAME = "Sales_Assistant.db";
     private static final int DATABASE_VERSION = 1;
 
+    //users
+    private static final String USERS_TABLE = "users";
+    private static final String USER_ID = "id";
+    private static final String USERNAME = "username";
+    private static final String EMAIL = "email";
+    private static final String PASSWORD = "password";
+
     // balance
     private static final String BALANCE_TABLE = "balance";
     private static final String BALANCE_ID = "id";
@@ -60,6 +67,10 @@ public class DataBase extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase DB) {
+        // users
+        String query0 = "CREATE TABLE " + USERS_TABLE + " (" + USER_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " + USERNAME + " TEXT, " + EMAIL + " TEXT, " + PASSWORD + " TEXT);";
+        DB.execSQL(query0);
+
         // balance
         String query = "CREATE TABLE " + BALANCE_TABLE + " (" + BALANCE_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " + CATEGORY + " TEXT, " + UNIT_NUM + " INTEGER, " + UNIT_PRICE + " DOUBLE);";
         DB.execSQL(query);
@@ -83,6 +94,7 @@ public class DataBase extends SQLiteOpenHelper {
 
     @Override
     public void onUpgrade(SQLiteDatabase DB, int oldVersion, int newVersion) {
+        DB.execSQL("DROP TABLE IF EXISTS " + USERS_TABLE);
         DB.execSQL("DROP TABLE IF EXISTS " + BALANCE_TABLE);
         DB.execSQL("DROP TABLE IF EXISTS " + SALES_TABLE);
         DB.execSQL("DROP TABLE IF EXISTS " + STORES_TABLE);
@@ -90,6 +102,23 @@ public class DataBase extends SQLiteOpenHelper {
         DB.execSQL("DROP TABLE IF EXISTS " + ADDITIONAL_TABLE);
         onCreate(DB);
     }
+
+    // users function
+    public void addUser(String username, String email, String password){
+        SQLiteDatabase DB = this.getWritableDatabase();
+        ContentValues contentValues = new ContentValues();
+        contentValues.put(USERNAME, username);
+        contentValues.put(EMAIL, email);
+        contentValues.put(PASSWORD, password);
+        long result = DB.insert(USERS_TABLE, null, contentValues);
+        if(result == -1){
+            Toast.makeText(context, "Failed To Add", Toast.LENGTH_SHORT).show();
+        }
+        else{
+            Toast.makeText(context, "Added Successfully!", Toast.LENGTH_SHORT).show();
+        }
+    }
+
 
     // balance function
     public void addBalance(String category, int unit_num, double unit_price){

@@ -1,4 +1,4 @@
-package com.example.iti_final_project.UI;
+package com.example.iti_final_project.MainPages;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -47,13 +47,11 @@ public class splash_screen extends AppCompatActivity {
                     e.printStackTrace();
                 }}};
         thread.start();
-
-
-
     }
 
     private void run_ProgressBar() {
         final Timer timer = new Timer();
+
         TimerTask timerTask = new TimerTask() {
             @Override
             public void run() {

@@ -14,7 +14,7 @@ import android.widget.Toast;
 
 import com.example.iti_final_project.DataBase.DataBase;
 import com.example.iti_final_project.R;
-import com.example.iti_final_project.UI.weekly_balance;
+import com.example.iti_final_project.MainPages.weekly_balance;
 
 public class add_balance extends AppCompatActivity {
 
