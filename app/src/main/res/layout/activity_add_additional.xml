@@ -46,7 +46,6 @@
 
     </com.google.android.material.textfield.TextInputLayout>
 
-
     <EditText
         android:id="@+id/additional_text_quantity"
         android:layout_width="match_parent"

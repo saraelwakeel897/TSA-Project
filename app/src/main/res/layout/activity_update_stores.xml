@@ -40,4 +40,5 @@
         app:layout_constraintTop_toBottomOf="@+id/stores_last_visit_date2"
         app:layout_constraintVertical_bias="0.0" />
 
+
 </androidx.constraintlayout.widget.ConstraintLayout>

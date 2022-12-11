@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".Stores.stores">
 
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/stores_recyclerview"
         android:layout_width="match_parent"

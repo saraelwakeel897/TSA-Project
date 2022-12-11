@@ -12,12 +12,13 @@
         android:id="@+id/balance_reset_fab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="384dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginTop="380dp"
         android:backgroundTint="@color/blue_300"
-        android:clickable="true"
         android:visibility="invisible"
+        app:fabSize="normal"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.954"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_reset" />
 
@@ -25,18 +26,15 @@
         android:id="@+id/balance_add_fab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
         android:layout_marginTop="12dp"
         android:backgroundTint="@color/blue_300"
-        android:clickable="true"
-        android:focusable="true"
         android:visibility="invisible"
+        app:fabSize="normal"
         app:layout_constraintEnd_toEndOf="@+id/balance_reset_fab"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/balance_reset_fab"
         app:layout_constraintTop_toBottomOf="@+id/balance_reset_fab"
-        app:srcCompat="@drawable/ic_add"
-        tools:ignore="SpeakableTextPresentCheck" />
+        app:srcCompat="@drawable/ic_add" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/balance_fab"
@@ -45,7 +43,7 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="32dp"
         android:backgroundTint="@color/blue_500"
-        android:clickable="true"
+        app:fabSize="normal"
         app:layout_constraintBottom_toBottomOf="@+id/balance_recyclerview"
         app:layout_constraintEnd_toEndOf="@+id/balance_add_fab"
         app:layout_constraintHorizontal_bias="0.0"
@@ -75,7 +73,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_empty"
+        android:src="@drawable/ic_empty"
         android:visibility="gone"/>
 
     <TextView
@@ -88,7 +86,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/balance_empty_imageView"
-        android:visibility="gone"
-        />
+        android:visibility="gone" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

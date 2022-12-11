@@ -7,15 +7,13 @@
     android:layout_height="match_parent"
     android:layout_gravity="center"
     tools:context=".MainPages.splash_screen"
-    style="@style/splash_screen"
-    >
-
+    style="@style/splash_screen">
 
     <ImageView
         android:id="@+id/img_splash"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:srcCompat="@drawable/ic_img_splash"
+        android:src="@drawable/ic_img_splash"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="16dp" />
 

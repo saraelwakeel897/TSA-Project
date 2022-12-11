@@ -8,6 +8,7 @@
     android:id="@+id/sales_container"
     tools:context=".Sales.sales">
 
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/sales_recyclerview"
         android:layout_width="match_parent"
@@ -27,8 +28,6 @@
         android:layout_alignParentEnd="true"
         android:layout_marginEnd="32dp"
         android:layout_marginBottom="32dp"
-        android:clickable="true"
-        android:focusable="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
