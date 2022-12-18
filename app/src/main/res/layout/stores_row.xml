@@ -2,6 +2,7 @@
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
@@ -50,28 +51,56 @@
                 app:layout_constraintTop_toTopOf="@+id/stores_id_row" />
 
             <TextView
-                android:id="@+id/stores_shop_location_row"
+                android:id="@+id/location_row"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="6dp"
-                android:text="Shop Location"
+                android:text="Location: "
+                android:textStyle="bold"
                 android:textColor="@color/blue_700"
                 android:textSize="16sp"
                 app:layout_constraintStart_toStartOf="@+id/stores_shop_name_row"
                 app:layout_constraintTop_toBottomOf="@+id/stores_shop_name_row" />
 
             <TextView
-                android:id="@+id/stores_shop_phone_row"
+                android:id="@+id/stores_shop_location_row"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Location"
+                android:textColor="@color/blue_700"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/location_row"
+                app:layout_constraintStart_toEndOf="@+id/location_row"
+                app:layout_constraintTop_toBottomOf="@+id/stores_shop_name_row"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <TextView
+                android:id="@+id/phone_row"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="6dp"
+                android:text="Phone: "
+                android:textStyle="bold"
+                android:textColor="@color/blue_700"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="@+id/location_row"
+                app:layout_constraintTop_toBottomOf="@+id/location_row" />
+
+            <TextView
+                android:id="@+id/stores_shop_phone_row"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:digits="01234567890"
                 android:inputType="phone"
-                android:digits="1234567890"
                 android:text="Phone"
                 android:textColor="@color/blue_700"
                 android:textSize="18sp"
-                app:layout_constraintStart_toStartOf="@+id/stores_shop_location_row"
-                app:layout_constraintTop_toBottomOf="@+id/stores_shop_location_row" />
+                app:layout_constraintBottom_toBottomOf="@+id/phone_row"
+                app:layout_constraintStart_toEndOf="@+id/phone_row"
+                app:layout_constraintTop_toBottomOf="@+id/location_row"
+                app:layout_constraintVertical_bias="1.0" />
 
             <TextView
                 android:id="@+id/stores_last_visit_date_row"
@@ -83,8 +112,8 @@
                 android:textColor="@color/blue_700"
                 android:textSize="18sp"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="@+id/stores_shop_phone_row"
-                app:layout_constraintTop_toBottomOf="@+id/stores_shop_phone_row" />
+                app:layout_constraintStart_toStartOf="@+id/phone_row"
+                app:layout_constraintTop_toBottomOf="@+id/phone_row" />
 
             <ImageView
                 android:id="@+id/stores_edit_icon"
@@ -104,6 +133,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
                 android:layout_marginEnd="16dp"
+                android:autoLink="phone"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toEndOf="@+id/stores_shop_phone_row"

@@ -47,6 +47,8 @@
         android:ems="10"
         android:hint="Shop Phone"
         android:inputType="phone"
+        android:digits="0123456789+"
+        android:maxLength="11"
         android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="@+id/text_shop_location"
         app:layout_constraintHorizontal_bias="0.0"

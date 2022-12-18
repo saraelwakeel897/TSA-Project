@@ -5,7 +5,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.app.DatePickerDialog;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.Editable;
 import android.text.TextUtils;
+import android.text.TextWatcher;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
@@ -24,7 +26,7 @@ public class add_stores extends AppCompatActivity {
     EditText text_stores_shop_name, text_shop_phone, text_last_visit_date;
     Button stores_add_btn;
 
-    String[] location = {"Dakahlia", "Sharkia", "Gharbia", "Damietta"};
+    String[] location = {"Luxor", "Giza", "Aswan", "Suez", "Cairo", "Damietta"};
     AutoCompleteTextView autoComplete_location;
     ArrayAdapter<String> adapter_location;
 
@@ -63,6 +65,7 @@ public class add_stores extends AppCompatActivity {
                 }
             }
         });
+
 
         // date picker
         final Calendar calendar = Calendar.getInstance();

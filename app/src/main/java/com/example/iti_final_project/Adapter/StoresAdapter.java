@@ -6,10 +6,12 @@ import android.app.Activity;
 import android.content.ActivityNotFoundException;
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.location.Address;
 import android.location.Geocoder;
 import android.net.Uri;
+import android.telephony.PhoneNumberUtils;
 import android.text.Html;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -66,7 +68,7 @@ public class StoresAdapter extends RecyclerView.Adapter<StoresAdapter.MyViewHold
         holder.stores_id_txt.setText(String.valueOf(stores_id.get(position)));
         holder.stores_shop_name_txt.setText(String.valueOf(store_shop_name.get(position)));
 
-        holder.shop_location_txt.setText(Html.fromHtml("<b> Location: </b> " + String.valueOf(shop_location.get(position))));
+        holder.shop_location_txt.setText(String.valueOf(shop_location.get(position)));
         holder.shop_location_txt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -79,7 +81,6 @@ public class StoresAdapter extends RecyclerView.Adapter<StoresAdapter.MyViewHold
                         double location_long = addressList.get(0).getLongitude();
                         Toast.makeText(stores_context, "Latitude: " + String.valueOf(location_lat) +
                                 " \nLongitude: " + String.valueOf(location_long), Toast.LENGTH_SHORT).show();
-
                         //holder.shop_location_txt.setText("Latitude: " + String.valueOf(location_lat) +" \nLongitude: " + String.valueOf(location_long) );
                     }
                 }
@@ -89,7 +90,7 @@ public class StoresAdapter extends RecyclerView.Adapter<StoresAdapter.MyViewHold
             }
         });
 
-        holder.shop_phone_txt.setText(Html.fromHtml("<b> Phone: </b> " + String.valueOf(shop_phone.get(position))));
+        holder.shop_phone_txt.setText("0" + String.valueOf(shop_phone.get(position)));
         holder.last_visit_date_txt.setText(Html.fromHtml("<b> Last Visit: </b> " + String.valueOf(last_visit_date.get(position))));
 
         holder.stores_edit_icon.setOnClickListener(new View.OnClickListener() {
@@ -104,15 +105,16 @@ public class StoresAdapter extends RecyclerView.Adapter<StoresAdapter.MyViewHold
         holder.stores_phone_icon.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String number = holder.shop_phone_txt.getText().toString();
-
                 if(ContextCompat.checkSelfPermission(stores_context, Manifest.permission.CALL_PHONE)
                         != PackageManager.PERMISSION_GRANTED){
                     ActivityCompat.requestPermissions(stores_activity, new String[] {Manifest.permission.CALL_PHONE}, PERMISSION_CODE);
                 }
-                Intent callIntent = new Intent(Intent.ACTION_CALL);
-                callIntent.setData(Uri.parse("tel:"+number));
-                stores_activity.startActivity(callIntent);
+                Intent call=new Intent();
+
+                String number = holder.shop_phone_txt.getText().toString().trim();
+                call.setAction(android.content.Intent.ACTION_CALL);
+                call.setData(Uri.parse("tel:"+number));
+                stores_activity.startActivity( call);
             }
         });
         holder.stores_location_icon.setOnClickListener(new View.OnClickListener() {

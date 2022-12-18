@@ -107,68 +107,6 @@
                     android:layout_marginLeft="15dp"
                     android:background="@drawable/circular_7"
                     android:elevation="5dp"
-                    android:padding="5dp"
-                    android:src="@drawable/ic_sales" />
-
-                <com.google.android.material.card.MaterialCardView
-                    android:id="@+id/card2"
-                    android:layout_width="300dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginLeft="-15dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginBottom="10dp"
-                    android:clickable="true"
-                    android:elevation="15dp"
-                    app:cardBackgroundColor="@color/white"
-                    app:cardCornerRadius="20dp">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:layout_marginLeft="20dp"
-                            android:padding="16dp"
-                            android:text="Sales Operations"
-                            android:textColor="@color/gray_700"
-                            android:textSize="23sp" />
-
-                    </LinearLayout>
-                </com.google.android.material.card.MaterialCardView>
-
-                <Button
-                    android:id="@+id/share_sales_btn"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:layout_gravity="center"
-                    android:layout_marginLeft="-25dp"
-                    android:background="@drawable/circular_2"
-                    android:drawableLeft="@drawable/ic_next"
-                    android:elevation="10dp"
-                    android:paddingLeft="0dp"
-                    app:backgroundTint="@null" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:orientation="horizontal"
-                android:gravity="center_vertical">
-
-                <ImageView
-                    android:layout_width="65dp"
-                    android:layout_height="65dp"
-                    android:layout_gravity="center"
-                    android:layout_marginLeft="15dp"
-                    android:background="@drawable/circular_7"
-                    android:elevation="5dp"
                     android:padding="9dp"
                     android:src="@drawable/ic_store" />
 
@@ -210,6 +148,68 @@
                     android:layout_gravity="center"
                     android:layout_marginLeft="-25dp"
                     android:background="@drawable/circular_6"
+                    android:drawableLeft="@drawable/ic_next"
+                    android:elevation="10dp"
+                    android:paddingLeft="0dp"
+                    app:backgroundTint="@null" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/circular_7"
+                    android:elevation="5dp"
+                    android:padding="5dp"
+                    android:src="@drawable/ic_sales" />
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/card2"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="-15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:clickable="true"
+                    android:elevation="15dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="20dp"
+                            android:padding="16dp"
+                            android:text="Sales Operations"
+                            android:textColor="@color/gray_700"
+                            android:textSize="23sp" />
+
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <Button
+                    android:id="@+id/share_sales_btn"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="-25dp"
+                    android:background="@drawable/circular_2"
                     android:drawableLeft="@drawable/ic_next"
                     android:elevation="10dp"
                     android:paddingLeft="0dp"
