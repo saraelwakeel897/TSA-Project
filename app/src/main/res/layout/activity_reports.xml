@@ -70,9 +70,9 @@
                             android:layout_gravity="center"
                             android:layout_marginLeft="20dp"
                             android:padding="16dp"
-                            android:text="Sold Categories"
+                            android:text="Weekly Balance"
                             android:textColor="@color/gray_700"
-                            android:textSize="25sp" />
+                            android:textSize="20sp" />
 
                     </LinearLayout>
 
@@ -134,7 +134,7 @@
                             android:padding="16dp"
                             android:text="Sales Operations"
                             android:textColor="@color/gray_700"
-                            android:textSize="25sp" />
+                            android:textSize="20sp" />
 
                     </LinearLayout>
                 </com.google.android.material.card.MaterialCardView>
@@ -195,7 +195,7 @@
                             android:padding="16dp"
                             android:text="Units With Defects"
                             android:textColor="@color/gray_700"
-                            android:textSize="25sp" />
+                            android:textSize="20sp" />
 
                     </LinearLayout>
                 </com.google.android.material.card.MaterialCardView>

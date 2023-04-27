@@ -64,6 +64,7 @@ public class weekly_balance extends AppCompatActivity {
             }
         });
 
+        balance_fab.setScaleY(getWindow().getDecorView().getScaleY());
         balance_add_fab = findViewById(R.id.balance_add_fab);
         balance_add_fab.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -418,7 +418,7 @@ public class reports extends AppCompatActivity {
                 paint.setColor(Color.BLUE);
                 paint.setTextAlign(Paint.Align.LEFT);
 
-                canvas.drawText(String.valueOf(m_shop.get(i)), startX + 30, startY - 50 , paint);
+                canvas.drawText(String.valueOf(m_shop.get(i)), startX + 30, startY - 70 , paint);
                 startY += 20;
             }
 
@@ -426,11 +426,11 @@ public class reports extends AppCompatActivity {
                 paint.setTextAlign(Paint.Align.RIGHT);
                 paint.setColor(Color.BLACK);
                 paint.setTextScaleX(1.5f);
-                canvas.drawText("Type", 230, 90, paint);
+                canvas.drawText("Type", 240, 90, paint);
                 paint.setColor(Color.BLUE);
                 paint.setTextAlign(Paint.Align.RIGHT);
 
-                canvas.drawText(String.valueOf(m_type.get(i)), startX + 220, startY - 110, paint);
+                canvas.drawText(String.valueOf(m_type.get(i)), startX + 230, startY - 150, paint);
                 startY += 20;
             }
 
@@ -438,11 +438,11 @@ public class reports extends AppCompatActivity {
                 paint.setTextAlign(Paint.Align.RIGHT);
                 paint.setColor(Color.BLACK);
                 paint.setTextScaleX(1.5f);
-                canvas.drawText("Defect", 310, 90, paint);
+                canvas.drawText("Defect", 330, 90, paint);
                 paint.setColor(Color.BLUE);
                 paint.setTextAlign(Paint.Align.RIGHT);
 
-                canvas.drawText(String.valueOf(defect.get(i)), startX + 300, startY - 170, paint);
+                canvas.drawText(String.valueOf(defect.get(i)), startX + 320, startY - 230, paint);
                 startY += 20;
             }
 
@@ -454,7 +454,7 @@ public class reports extends AppCompatActivity {
                 paint.setColor(Color.BLUE);
                 paint.setTextAlign(Paint.Align.RIGHT);
 
-                canvas.drawText(String.valueOf(fixed.get(i)), startX + 370, startY - 230, paint);
+                canvas.drawText(String.valueOf(fixed.get(i)), startX + 370, startY - 310, paint);
                 startY += 20;
             }
 

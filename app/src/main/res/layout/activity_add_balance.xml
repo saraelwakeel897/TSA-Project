@@ -16,6 +16,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
         android:hint="Select Category"
+
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -24,7 +25,8 @@
             android:id="@+id/balance_autocomplete_product_type"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="none"/>
+            android:inputType="none"
+            />
 
     </com.google.android.material.textfield.TextInputLayout>
 

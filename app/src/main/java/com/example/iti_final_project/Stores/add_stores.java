@@ -26,7 +26,7 @@ public class add_stores extends AppCompatActivity {
     EditText text_stores_shop_name, text_shop_phone, text_last_visit_date;
     Button stores_add_btn;
 
-    String[] location = {"Luxor", "Giza", "Aswan", "Suez", "Cairo", "Damietta"};
+    String[] location = {"Luxor", "Giza", "Aswan", "Cairo", "Damietta"};
     AutoCompleteTextView autoComplete_location;
     ArrayAdapter<String> adapter_location;
 

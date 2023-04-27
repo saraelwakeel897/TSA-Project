@@ -3,10 +3,14 @@ package com.example.iti_final_project.MainPages;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
+import android.annotation.SuppressLint;
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.ScrollView;
 
 import com.example.iti_final_project.Additional.additional_requests;
 import com.example.iti_final_project.Balance.weekly_balance;
@@ -19,12 +23,19 @@ import com.example.iti_final_project.Stores.stores;
 public class home extends AppCompatActivity {
 
     Button btn1, btn2, btn3, btn4, btn5, btn6;
+    ScrollView main_scroll;
     CardView card1, card2, card3, card4, card5, card6;
 
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+
+        main_scroll = findViewById(R.id.main_scroll);
+        main_scroll.setScaleX(getWindow().getDecorView().getScaleX());
+        main_scroll.setScaleY(getWindow().getDecorView().getScaleY());
+
 
         btn1 = findViewById(R.id.share_type_btn);
         btn2 = findViewById(R.id.share_sales_btn);
@@ -72,6 +83,7 @@ public class home extends AppCompatActivity {
                 startActivity(intent2);
             }
         });
+
 
         btn3.setOnClickListener(new View.OnClickListener() {
             @Override

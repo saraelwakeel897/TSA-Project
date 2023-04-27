@@ -6,6 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#ECEFF1"
+    android:id="@+id/main_scroll"
+    android:layout_weight="1"
     tools:context=".MainPages.home">
 
     <LinearLayout
@@ -73,7 +75,7 @@
                             android:padding="16dp"
                             android:text="Weekly Balance"
                             android:textColor="@color/gray_700"
-                            android:textSize="23sp" />
+                            android:textSize="20sp" />
 
                     </LinearLayout>
 
@@ -136,7 +138,7 @@
                             android:padding="16dp"
                             android:text="Registered Stores"
                             android:textColor="@color/gray_700"
-                            android:textSize="23sp" />
+                            android:textSize="20sp" />
 
                     </LinearLayout>
                 </com.google.android.material.card.MaterialCardView>
@@ -198,7 +200,7 @@
                             android:padding="16dp"
                             android:text="Sales Operations"
                             android:textColor="@color/gray_700"
-                            android:textSize="23sp" />
+                            android:textSize="20sp" />
 
                     </LinearLayout>
                 </com.google.android.material.card.MaterialCardView>
@@ -261,7 +263,7 @@
                             android:padding="16dp"
                             android:text="Maintenance"
                             android:textColor="@color/gray_700"
-                            android:textSize="23sp" />
+                            android:textSize="20sp" />
 
                     </LinearLayout>
                 </com.google.android.material.card.MaterialCardView>
@@ -323,7 +325,7 @@
                             android:padding="16dp"
                             android:text="Additional Requests"
                             android:textColor="@color/gray_700"
-                            android:textSize="23sp" />
+                            android:textSize="20sp" />
 
                     </LinearLayout>
                 </com.google.android.material.card.MaterialCardView>
@@ -385,7 +387,7 @@
                             android:padding="16dp"
                             android:text="Reports"
                             android:textColor="@color/gray_700"
-                            android:textSize="23sp" />
+                            android:textSize="20sp" />
 
                     </LinearLayout>
                 </com.google.android.material.card.MaterialCardView>
